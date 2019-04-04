@@ -37,6 +37,7 @@ class CashRegister
       self.total = (total * ((100 - discount.to_f)/100)).round
       # Display a successful message
       "After the discount, the total comes to $#{self.total}."
+    # If no discount was passed in...
     else
       # Display a non-successful message
       "There is no discount to apply."
